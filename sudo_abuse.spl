@@ -3,7 +3,7 @@
 | Tactic: Privilege Escalation
 | Description: Detects sudo usage by users outside known admin accounts
 | Alert Schedule: Every 5 minutes | Severity: Medium
-| Note: Update the NOT list with your actual admin usernames
+
 
 index="soc_lab" "sudo"
 | rex "(?P<sudo_user>[\w-]+) : TTY"
