@@ -1,8 +1,0 @@
-| Comment: New Local User Account Created
-| Description: Detects creation of new user accounts via useradd or adduser commands
-| Alert Schedule: Every 5 minutes | Severity: Medium
-
-index="soc_lab" ("useradd" OR "adduser" OR "new user")
-| rex "new user: name=(?P<new_user>\S+)"
-| table _time, host, new_user, _raw
-| sort -_time
