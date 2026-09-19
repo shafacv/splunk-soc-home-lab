@@ -93,8 +93,8 @@ splunk-soc-home-lab/
 │   ├── new_user_account.spl
 │   └── sudo_abuse.spl
 └── screenshots/
-    ├── attacks/                     # Kali attack commands + raw log ingestion
-    ├── alerts/                      # Alert configs, triggered alerts, email notifications
+    ├── attacks/                     # Kali attack commands 
+    ├── alerts/                      # Alert configs, triggered alerts
     └── dashboard/                   # SOC dashboard panels
 ```
 
